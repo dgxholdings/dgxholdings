@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DGX Holdings</title>
+    <style>
+        /* Base Reset */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: #2e2e2e; /* Dark grey */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            /* Falls back to standard sans-serif if Transport isn't loaded */
+            font-family: "Transport", "Arial", sans-serif;
+            text-transform: uppercase;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+        }
+
+        .dgx {
+            font-size: 120px;
+            line-height: 0.9;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .holdings {
+            font-size: 24px; /* Starting size, adjusted by letter-spacing */
+            line-height: 1;
+            display: flex;
+            justify-content: space-between;
+            /* This ensures "HOLDINGS" spreads to match the width of "DGX" */
+            text-align: justify;
+            width: 100%;
+            margin-top: 5px;
+            letter-spacing: 0.30em; /* Adjusted to stretch the word */
+            text-indent: 0.30em;    /* Centers the stretch */
+        }
+
+        /* Responsive scaling for mobile devices */
+        @media (max-width: 600px) {
+            .dgx { font-size: 60px; }
+            .holdings { font-size: 12px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="dgx">DGX</div>
+        <div class="holdings">HOLDINGS LTD</div>
+    </div>
+
+</body>
+</html>
